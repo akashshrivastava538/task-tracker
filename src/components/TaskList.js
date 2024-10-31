@@ -1,11 +1,27 @@
 // src/components/TaskList.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import TaskItem from './TaskItem';
 import { TaskContainer, TaskTable, TableHeader, SortingContainer, SortingSelect } from './styles';
+import { loadTasks, editTask, deleteTask } from '../redux/tasksSlice';
 
-const TaskList = ({ tasks, onEditTask, onDeleteTask }) => {
+const TaskList = () => {
+  const dispatch = useDispatch();
+  const tasks = useSelector((state) => state.tasks.tasks);
+  
   const [sortCriteria, setSortCriteria] = useState('priority');
   const [sortOrder, setSortOrder] = useState('asc');
+
+  useEffect(() => {
+    const savedTasks = localStorage.getItem('tasks');
+    if (savedTasks) {
+      dispatch(loadTasks(JSON.parse(savedTasks)));
+    }
+  }, [dispatch]);
+
+  useEffect(() => {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+  }, [tasks]);
 
   const sortedTasks = [...tasks].sort((a, b) => {
     if (sortCriteria === 'priority') {
@@ -26,8 +42,8 @@ const TaskList = ({ tasks, onEditTask, onDeleteTask }) => {
           <option value="dueDate">Due Date</option>
         </SortingSelect>
         <SortingSelect value={sortOrder} onChange={(e) => setSortOrder(e.target.value)}>
-          <option value="asc">Low to High</option>
-          <option value="desc">High to Low</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
         </SortingSelect>
       </SortingContainer>
       <TaskTable>
@@ -44,7 +60,7 @@ const TaskList = ({ tasks, onEditTask, onDeleteTask }) => {
         </thead>
         <tbody>
           {sortedTasks.map((task) => (
-            <TaskItem key={task.id} task={task} onEditTask={onEditTask} onDeleteTask={onDeleteTask} />
+            <TaskItem key={task.id} task={task} />
           ))}
         </tbody>
       </TaskTable>
@@ -53,6 +69,10 @@ const TaskList = ({ tasks, onEditTask, onDeleteTask }) => {
 };
 
 export default TaskList;
+
+
+
+
 
 
 

@@ -3,12 +3,15 @@ React Task Management with Priority Lists
 USERNAME- admin    
 Password-password 
 
+
 Task Creation: Add tasks to the respective priority lists.
 Edit Task: Modify task details such as the task name and description.
 Delete Task: Remove tasks when they are no longer needed.
 Priority Management: Move tasks between priority lists
 Redux-Toolkit- Used Redux-Toolkit for State Management
 
+![Screenshot (567)](https://github.com/user-attachments/assets/ae88c418-b055-434c-8378-071a1104cd8e)
+![Screenshot (567)](https://github.com/user-attachments/assets/1b17588f-bdf5-4fbb-93eb-1c0e15274d07)
 
 Getting Started
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.

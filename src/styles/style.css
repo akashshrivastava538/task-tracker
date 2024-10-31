@@ -12,6 +12,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Prevent overflow on smaller screens */
 }
 
 .form-container {
@@ -62,6 +63,7 @@ body {
 .task-table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: auto; /* Allow the table to adjust automatically */
 }
 
 .task-table th,
@@ -110,7 +112,7 @@ body {
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .app-container {
         padding: 15px;
     }
@@ -129,6 +131,7 @@ body {
     .task-table td {
         padding: 10px; /* More padding for table cells */
         font-size: 14px; /* Slightly smaller font for mobile */
+        word-wrap: break-word; /* Prevent overflow of long words */
     }
 
     .time-tracker button {
@@ -139,6 +142,26 @@ body {
         font-size: 18px; /* Larger font for better readability */
     }
 }
+
+@media (max-width: 480px) {
+    .button {
+        padding: 6px; /* Smaller padding for very small screens */
+    }
+
+    .task-table th,
+    .task-table td {
+        font-size: 12px; /* Further decrease font size */
+    }
+
+    .time-display {
+        font-size: 16px; /* Adjusted font size */
+    }
+
+    .app-container {
+        padding: 10px; /* Reduced padding */
+    }
+}
+
 
   
   

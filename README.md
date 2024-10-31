@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+React Task Management with Priority Lists
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Task Creation: Add tasks to the respective priority lists.
+Edit Task: Modify task details such as the task name and description.
+Delete Task: Remove tasks when they are no longer needed.
+Priority Management: Move tasks between priority lists
+Redux-Toolkit- Used Redux-Toolkit for State Management
 
-In the project directory, you can run:
 
-### `npm start`
+Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prerequisites
+React.js and npm (Node Package Manager) should be installed on your machine.
+Installation
+Clone the repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+git clone https://github.com/your-username/react-task-management.git
+Navigate to the project directory:
 
-### `npm test`
+cd react-task-management
+Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
+Start the development server:
 
-### `npm run build`
+npm start
+Open your browser and go to http://localhost:3000 to access the app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Usage
+Add Task: Click on the "Add Task" button in the respective priority section, fill in the task details, and press "Save."
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Edit Task: Click on the task you want to edit, make the necessary changes, and press "Save Changes."
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Delete Task: Click on the "Delete" button next to the task you want to remove.
 
-### `npm run eject`
+Change Priority: Drag and drop tasks between the different priority lists to change their priority.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Built With
+React - JavaScript library for building user interfaces.
+Tailwind CSS - Library for adding beautiful Styling With Responsive Design.
+Contributing
+Contributions are welcome! Fork the repository and create a pull request with your changes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Acknowledgments
+Hat tip to anyone whose code was used as inspiration.
+Thanks to the React and open-source community for their amazing work.
+Feel free to customize this README according to your project's needs. Good luck with your React Task Management app! If you have any questions or need further assistance, don't hesitate to reach out.

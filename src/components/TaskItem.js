@@ -1,6 +1,6 @@
 // src/components/TaskItem.js
 import React, { useEffect, useState } from 'react';
-import { TableRow, TableCell, Button, Timer } from './styles';
+import { TableRow, TableData, Button, Timer } from './styles'; // Change TableCell to TableData
 
 const TaskItem = ({ task, onEditTask, onDeleteTask }) => {
   const [seconds, setSeconds] = useState(0);
@@ -15,22 +15,23 @@ const TaskItem = ({ task, onEditTask, onDeleteTask }) => {
 
   return (
     <TableRow priority={task.priority}>
-      <TableCell>{task.title}</TableCell>
-      <TableCell>{task.description}</TableCell>
-      <TableCell>{task.dueDate}</TableCell>
-      <TableCell>{task.priority}</TableCell>
-      <TableCell>{task.notes}</TableCell>
-      <TableCell>
+      <TableData>{task.title}</TableData> {/* Change TableCell to TableData */}
+      <TableData>{task.description}</TableData> {/* Change TableCell to TableData */}
+      <TableData>{task.dueDate}</TableData> {/* Change TableCell to TableData */}
+      <TableData>{task.priority}</TableData> {/* Change TableCell to TableData */}
+      <TableData>{task.notes}</TableData> {/* Change TableCell to TableData */}
+      <TableData>
         <Button onClick={() => onEditTask(task)}>Edit</Button>
         <Button onClick={() => onDeleteTask(task.id)}>Delete</Button>
-      </TableCell>
-      <TableCell>
+      </TableData> {/* Change TableCell to TableData */}
+      <TableData>
         <Timer>Time Spent: {Math.floor(seconds / 60)}m {seconds % 60}s</Timer>
-      </TableCell>
+      </TableData> {/* Change TableCell to TableData */}
     </TableRow>
   );
 };
 
 export default TaskItem;
+
 
 

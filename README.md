@@ -49,9 +49,6 @@ Tailwind CSS - Library for adding beautiful Styling With Responsive Design.
 Contributing
 Contributions are welcome! Fork the repository and create a pull request with your changes.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 Acknowledgments
 Hat tip to anyone whose code was used as inspiration.
 Thanks to the React and open-source community for their amazing work.

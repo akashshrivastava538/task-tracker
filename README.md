@@ -1,5 +1,7 @@
 React Task Management with Priority Lists
 
+USERNAME- admin
+Password-password 
 
 Task Creation: Add tasks to the respective priority lists.
 Edit Task: Modify task details such as the task name and description.
